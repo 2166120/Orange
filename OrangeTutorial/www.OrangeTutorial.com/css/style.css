@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+}
+.navigation{
+    text-align: center;
+    padding: 10px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: Karla, sans-serif;
+    margin-right: 80px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: 0.3s;
+}
+.navigation a:hover{
+    background: grey;
+    border: 2px solid #fff;
+}
+.subjects-section{
+    width: 100%;
+    height: 770px;
+    background: #4b6961;
+    text-align: center;
+}
+.subjects-section h2{
+     font-size: 25px;
+     font-family: Karla, sans-serif;
+     padding: 10px;
+     color: #bbd1d3;
+}
+.subjects-section .image{
+    width: 29%;
+    margin: 2%;
+    float: left;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    transition: all ease 0.5s;
+    transform: scale(1);
+}
+.image img:hover{
+    transform: scale(1.2);
+}
+.contact-section{
+    height: 48vh;
+    background: gray;
+    text-align: center;
+}
+.contact-section span{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Karla, sans-serif;
+    color: lightgray;
+}
+input{
+    display: block;
+    margin: 10px auto 0;
+    margin-buttom: 10px;
+    border-radius: 10px;
+    border: 0;
+    background: #50555b;
+    color: #fff;
+}
+textarea{
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 500px;
+    background: #50555b;
+    color: #fff;
+}
+.inp-msg{
+    height: 100px;
+    width: 500px;
+}
+.footer{
+    font-size: 20px;
+    height: 160px;
+    padding: 10px;
+    text-align: center;
+    cursor: default;
+}
+.footer p{
+    font-size: 13px;
+    font-family: Karla, sans-serif;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    line-height: 20px;
+}
