@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="style/css.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <meta charset="utf-8">
+    <script>
+    	$(document).ready(function(){
+    		$('a').click(function(){
+    			var selected = $(this);
+    			$('a').removeClass('active');
+    			$(selected).addClass('active');
+    		});
+
+    		var $a = $('.a'),
+    		$b = $('.b'),
+    		$c = $('.c'),
+    		$d = $('.d'),
+        $e = $('.e'),
+        $f = $('.f'),
+        $g = $('.g'),
+        $h = $('.h'),
+        $i = $('.i'),
+    		$home = $('.home'),
+    		$introduction = $('.introduction'),
+    		$syntax = $('.syntax'),
+    		$color = $('.color')
+        $background = $('.background'),
+        $border = $('.border'),
+        $margin = $('.margin'),
+        $padding = $('.padding'),
+        $heightwidth = $('.heightwidth');
+
+    		$a.click(function(){
+    			$home.fadeIn();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $color.fadeOut();
+          $background.fadeOut();
+          $border.fadeOut();
+          $margin.fadeOut();
+          $padding.fadeOut();
+          $heightwidth.fadeOut();
+    		});
+    		$b.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeIn();
+    			$syntax.fadeOut();
+				  $color.fadeOut();
+          $background.fadeOut();
+          $border.fadeOut();
+          $margin.fadeOut();
+          $padding.fadeOut();
+          $heightwidth.fadeOut();
+            });
+    		$c.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeIn();
+				  $color.fadeOut();
+          $background.fadeOut();
+          $border.fadeOut();
+          $margin.fadeOut();
+          $padding.fadeOut();
+          $heightwidth.fadeOut();
+            });
+    		$d.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $color.fadeIn();
+          $background.fadeOut();
+          $border.fadeOut();
+          $margin.fadeOut();
+          $padding.fadeOut();
+          $heightwidth.fadeOut();
+            });
+        $e.click(function() {
+          $home.fadeOut();
+          $introduction.fadeOut();
+          $syntax.fadeOut();
+          $color.fadeOut();
+          $background.fadeIn();
+          $border.fadeOut();
+          $margin.fadeOut();
+          $padding.fadeOut();
+          $heightwidth.fadeOut();
+            });
+    	});
+    </script>
+</head>
+
+<body>
+<div class="background">
+
+<div class="nav">
+    <a class="a active" href="#">Home</a>
+    <a class="b" href="#">Introduction</a>
+    <a class="c" href="#">Syntax</a>
+    <a class="d" href="#">Color</a>
+    <a class="e" href="#">Backgrounds</a>
+    <a class="f" href="#">Borders</a>
+    <a class="g" href="#">Margins</a>
+    <a class="h" href="#">Padding</a>
+    <a class="i" href="#">Height/Width</a>
+</div>
+
+<div class="content">
+	 <div class="home">
+
+	 </div>
+	 <div class="introduction">
+     <h2>What is CSS</h2>
+     <p>
+       CSS stands for Cascading Style Sheets
+       CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+       CSS saves a lot of work. It can control the layout of multiple web pages all at once
+       External stylesheets are stored in CSS files
+     </p>
+     <h2>Why use CSS?</h2>
+     <p>
+       CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+     <p>
+    <h2>CSS Saves a lot if Work</h2>
+     <p>
+       The style definitions are normally saved in external .css files.
+       With an external stylesheet file, you can change the look of an entire website by changing just one file!
+     </p>
+	 </div>
+	 <div class="syntax">
+
+	 </div>
+	 <div class="color">
+
+	 </div>
+   <div class="background">
+
+   </div>
+   <div class="borders">
+
+   </div>
+   <div class="margins">
+
+   </div>
+   <div class="padding">
+
+   </div>
+   <div class="height/width">
+
+   </div>
+   <div class="box model">
+
+   </div>
+   <div class="outline">
+
+   </div>
+   <div class="text">
+
+   </div>
+   <div class="fonts">
+
+   </div>
+   <div class="icons">
+
+   </div>
+   <div class="links">
+
+   </div>
+   <div class="lists">
+
+   </div>
+   <div class="tables">
+
+   </div>
+   <div class="display">
+
+   </div>
+   <div class="position">
+
+   </div>
+   <div class="overflow">
+
+   </div>
+   <div class="float">
+
+   </div>
+   <div class="align">
+
+   </div>
+
+</div>
+
+</div>
+
+<footer>
+    <div class="footer">
+        <p>OrangeTutorials&copy; 2018-19<br>
+            OrangeTutorial@slu.edu.ph<br>
+            Baguio City, Philippines<br>
+            0985496325<br>
+        </p>
+        <a href="https://mail.google.com">
+            <img src="images/gm.png" height="35" width="35" alt="gm logo"/>
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/fb.png" height="35" width="35" alt="fb logo"/>
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/ig.png" height="35" width="35" alt="ig logo"/>
+        </a>
+        <a href="https://www.pinterest.ph">
+            <img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
+        </a>
+    </div>
+</footer>
+
+</body>
+
+</html>
