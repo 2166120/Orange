@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>CSS Tutorials</title>
-    <link rel="stylesheet" type="text/css" href="style/css.css">
+    <title>Orange CSS Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="styles/css.css">
     <script src="js/jquery-3.3.1.js"></script>
-    <meta charset="utf-8">
     <script>
     	$(document).ready(function(){
     		$('a').click(function(){
@@ -19,180 +18,119 @@
     		$c = $('.c'),
     		$d = $('.d'),
         $e = $('.e'),
-        $f = $('.f'),
-        $g = $('.g'),
-        $h = $('.h'),
-        $i = $('.i'),
     		$home = $('.home'),
     		$introduction = $('.introduction'),
     		$syntax = $('.syntax'),
-    		$color = $('.color')
-        $background = $('.background'),
-        $border = $('.border'),
-        $margin = $('.margin'),
-        $padding = $('.padding'),
-        $heightwidth = $('.heightwidth');
+    		$colors = $('.colors'),
+        $backgrounds = $('.backgrounds');
 
     		$a.click(function(){
     			$home.fadeIn();
     			$introduction.fadeOut();
     			$syntax.fadeOut();
-				  $color.fadeOut();
-          $background.fadeOut();
-          $border.fadeOut();
-          $margin.fadeOut();
-          $padding.fadeOut();
-          $heightwidth.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
     		});
     		$b.click(function() {
           $home.fadeOut();
     			$introduction.fadeIn();
     			$syntax.fadeOut();
-				  $color.fadeOut();
-          $background.fadeOut();
-          $border.fadeOut();
-          $margin.fadeOut();
-          $padding.fadeOut();
-          $heightwidth.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
             });
     		$c.click(function() {
           $home.fadeOut();
     			$introduction.fadeOut();
     			$syntax.fadeIn();
-				  $color.fadeOut();
-          $background.fadeOut();
-          $border.fadeOut();
-          $margin.fadeOut();
-          $padding.fadeOut();
-          $heightwidth.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
             });
     		$d.click(function() {
           $home.fadeOut();
     			$introduction.fadeOut();
     			$syntax.fadeOut();
-				  $color.fadeIn();
-          $background.fadeOut();
-          $border.fadeOut();
-          $margin.fadeOut();
-          $padding.fadeOut();
-          $heightwidth.fadeOut();
+				  $colors.fadeIn();
+          $backgrounds.faceOut();
             });
         $e.click(function() {
           $home.fadeOut();
-          $introduction.fadeOut();
-          $syntax.fadeOut();
-          $color.fadeOut();
-          $background.fadeIn();
-          $border.fadeOut();
-          $margin.fadeOut();
-          $padding.fadeOut();
-          $heightwidth.fadeOut();
+        	$introduction.fadeOut();
+        	$syntax.fadeOut();
+    			$colors.fadeOut();
+          $backgrounds.fadeIn();
             });
     	});
     </script>
 </head>
 
-<body>
-<div class="background">
+<body background="images/background.jpg">
 
 <div class="nav">
     <a class="a active" href="#">Home</a>
-    <a class="b" href="#">Introduction</a>
+    <a class="b" href="#">CSS Introduction</a>
     <a class="c" href="#">Syntax</a>
-    <a class="d" href="#">Color</a>
+    <a class="d" href="#">Colors</a>
     <a class="e" href="#">Backgrounds</a>
     <a class="f" href="#">Borders</a>
     <a class="g" href="#">Margins</a>
-    <a class="h" href="#">Padding</a>
-    <a class="i" href="#">Height/Width</a>
+    <a class="h" href="#">Outline</a>
+    <a class="i" href="#">Text</a>
 </div>
 
 <div class="content">
 	 <div class="home">
+     <h3>CSS Tutorial</h3>
+     <p>
+     CSS is a language that describes the style of an HTML document.<br>
+     CSS describes how HTML elements should be displayed.<br>
+     This tutorial will teach you CSS from basic to advanced.<br>
+     </p>
+	 </div>
 
-	 </div>
 	 <div class="introduction">
-     <h2>What is CSS</h2>
+     <h4>What is CSS?</h4>
      <p>
-       CSS stands for Cascading Style Sheets
-       CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-       CSS saves a lot of work. It can control the layout of multiple web pages all at once
-       External stylesheets are stored in CSS files
+       <ul>
+         <li>CSS stands for Cascading Style Sheets</li>
+         <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+         <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+         <li>External stylesheets are stored in CSS files</li>
+       </ul>
      </p>
-     <h2>Why use CSS?</h2>
+     <h4>Why use CSS</h4>
      <p>
-       CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+       CSS is used to define styles for your web pages, including the design, layout and variations in display<br>
+       for different devices and screen sizes.
+     </p>
+     <h4>CSS Solved a Big Problem</h4>
      <p>
-    <h2>CSS Saves a lot if Work</h2>
-     <p>
-       The style definitions are normally saved in external .css files.
-       With an external stylesheet file, you can change the look of an entire website by changing just one file!
+       HTML was NEVER intended to contain tags for formatting a web page!<br>
+       HTML was created to describe the content of a web page, like:<br>
+       &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+       &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+       When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare <br>
+       for web developers. Development of large websites, where fonts and color information were added to every single<br>
+       page, became a long and expensive process.<br>
+       To solve this problem, the World Wide Web Consortium (W3C) created CSS.<br>
+       CSS removed the style formatting from the HTML page!<br>
      </p>
 	 </div>
+
 	 <div class="syntax">
 
 	 </div>
-	 <div class="color">
+
+	 <div class="colors">
 
 	 </div>
-   <div class="background">
 
-   </div>
-   <div class="borders">
-
-   </div>
-   <div class="margins">
-
-   </div>
-   <div class="padding">
-
-   </div>
-   <div class="height/width">
-
-   </div>
-   <div class="box model">
-
-   </div>
-   <div class="outline">
-
-   </div>
-   <div class="text">
-
-   </div>
-   <div class="fonts">
-
-   </div>
-   <div class="icons">
-
-   </div>
-   <div class="links">
-
-   </div>
-   <div class="lists">
-
-   </div>
-   <div class="tables">
-
-   </div>
-   <div class="display">
-
-   </div>
-   <div class="position">
-
-   </div>
-   <div class="overflow">
-
-   </div>
-   <div class="float">
-
-   </div>
-   <div class="align">
+   <div class="backgrounds">
 
    </div>
 
 </div>
 
-</div>
+</body>
 
 <footer>
     <div class="footer">
@@ -215,7 +153,4 @@
         </a>
     </div>
 </footer>
-
-</body>
-
 </html>
