@@ -13,18 +13,18 @@ html, body{
     background-image: url(../images/navigationbars.jpg);
 }
 .navigation-bar a{
-    text-decoration: none;  /* remove underline text */
+    text-decoration: none;
     color: #fff;
     font-size: 25px;
     font-family: Karla, sans-serif;
     margin-right: 80px;
     border: 2px solid transparent;
-    padding: 10px;      /* its like the background image of the text */
+    padding: 10px;
     transition: 0.3s;
 }
 .navigation-bar a:hover{
     background: grey;
-    border: 2px solid #fff;  /* UI */
+    border: 2px solid #fff;
 }
 .subjects-section{
     width: 100%;
@@ -74,7 +74,7 @@ html, body{
     transform: scale(1.2);
 }
 .contact-section{
-    height: 280px;
+    height: 230px;
     background: gray;
     text-align: center;
 }
