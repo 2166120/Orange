@@ -10,11 +10,25 @@
 			<p>
 			NOTE: If you are going to write JavaScript (JS) as an external source, always write the following:
 			</p>
-			<p>&ltscript type = "text/javascript" src = "JS-program-name.js"&gt&lt/script&gt</p>
-			<p>If JS is going to manipulate a part of Hypertext Markup Language (HTML), then put the following within the body of an HTML file:</p>
-			<p><div id="id-name"></div></p>
+			<pre>&ltscript type = "text/javascript" src = "JS-program-name.js"&gt&lt/script&gt</pre>
+			<p>
+			If JS is going to manipulate a part of Hypertext Markup Language (HTML),
+			then put the following within the body of an HTML file:
+			</p>
+			<pre>&ltdiv id="id-name"&gt&lt/div&gt</pre>
+			<p>
+			The form of the main method in JS that will be used for the execution of the program:
+			</p>
+			<pre>function init()</pre>
+			<pre>{</pre>
+			<pre>  var panel = document.getElementById( "id-name" );</pre>
+			<pre>  //insert executable code here</pre>
+			<pre>}</pre>
+			<pre>document.addEventListener( "DOMContentLoaded", init, false );</pre>
 			
-			<h2>Employing Objects</h2>
+			<br/><br/>
+			
+			<h2>Objects</h2>
 			
 			<section>
 				<p>
@@ -46,7 +60,42 @@
 				<pre>  this.first-method = function1;</pre>
 				<pre>  this.second-method = function2;</pre>
 				<pre>}</pre>
-				<p>Now we will make an object named Plant. Its properties in this program will be cell-type and cell-number.</p>
+				<p>
+				Now we will make a JS file "Fungus.js". The object will be named Fungus.
+				Its properties in this program will be cell-type, cell-number and message.
+				To get the values of cell-type, cell-number and message, we will also employ
+				the methods get-cell-type, get-cell-number and get-message.
+				We will set the message so there will be a set-message.
+				The program to be written will be the following:
+				</p>
+				<pre>function Fungus(message)</pre>
+				<pre>{</pre>
+				<pre>  this.cell-type = "Eukaryotic";</pre>
+				<pre>  this.cell-number = "Multi";</pre>
+				<pre>  this.message = message;</pre>
+				<pre>  this.get-cell-type = get-cell-type;</pre>
+				<pre>  this.get-cell-number = get-cell-number;</pre>
+				<pre>  this.get-message = get-message;</pre>
+				<pre>  this.set-message = set-message;</pre>
+				<pre>}</pre>
+				<br/>
+				<p>
+				For the methods to work, we will also give them the functions
+				that returns the values of cell-type and cell-number in the following:
+				</p>
+				<pre>function get-cell-type() { return cell-type; }</pre>
+				<pre>function get-cell-number() { return cell-number; }</pre>
+				<pre>function get-message() { return message; }</pre>
+				<pre>function set-message( message ) { this.message = message; }</pre>
+				<p>
+				There, you created an object. How about typing whatever message the Fungi has in this text area:
+				</p>
+				<textarea>
+				
+				</textarea>
+				<button>
+				Send Message From Fungi
+				</button>
 			</section>	
 				
 			<br/><br/>
@@ -54,17 +103,14 @@
 			<section>
 				<h3>Extending an Object</h3>
 				<p>
-				In this tutorial, we are going to extend object Plant with the prototype property
-				for the purpose of adding properties and methods that will be used for a specific instance of Fungi called Mushroom.
-				Its additional properties will be button-color, button-size, stem-color, stem-size, spores-color, spores-number, spores-texture, spores-shape and spores-size.
+				In this tutorial, we are going to extend object Fungus with the prototype property
+				for the purpose of adding properties and methods that will be used for a specific instance of Fungus called Mushroom.
+				Its additional properties will be button-color, button-size, stem-color, stem-size,
+				spores-color, spores-number, spores-texture, spores-shape and spores-size.
+				This time, we will not only employ get methods for each of the properties but also the set methods
+				for the editing of the added properties.
 				</p>
-				<ul>
-					<li>
-					<li>
-				</ul>
-				<ol>
 				
-				</ol>
 			</section>	
 				
 			<br/><br/>
@@ -76,66 +122,6 @@
 				</p>
 				<ol>
 				
-				</ol>
-			</section>
-			
-			<br/><br/>
-<>			
-			<section>
-				<h3>Looping through Elements</h3>
-				<p>
-				
-				</p>
-				<ol>
-				
-				</ol>
-			</section>
-			
-			<br/><br/>
-			
-			<section>
-				<h3>Adding Array Elements</h3>
-				<p>
-				
-				</p>
-				<ol>
-				
-				</ol>
-			</section>
-			
-			<br/><br/>
-			
-			<section>
-				<h3>Joining and Slicing Arrays</h3>
-				<p>
-				
-				</p>
-				<ol>
-				
-				</ol>
-			</section>
-			
-			<br/><br/>
-			
-			<section>
-				<h3>Sorting Array Elements</h3>
-				<p>
-				
-				</p>
-				<ol>
-				
-				</ol>
-			</section>
-			
-			<br/><br/>
-			
-			<section>
-				<h3>Catching Exceptions</h3>
-				<p>
-			
-				</p>
-				<ol>
-			
 				</ol>
 			</section>
 		</div>
