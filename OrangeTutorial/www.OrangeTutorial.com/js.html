@@ -21,14 +21,14 @@
 			</p>
 			<pre>function init()</pre>
 			<pre>{</pre>
-			<pre>  var panel = document.getElementById( "id-name" );</pre>
+			<pre>  var panel = document.getElementById("id-name");</pre>
 			<pre>  //insert executable code here</pre>
 			<pre>}</pre>
-			<pre>document.addEventListener( "DOMContentLoaded", init, false );</pre>
+			<pre>document.addEventListener("DOMContentLoaded", init, false);</pre>
 			
 			<br/><br/>
 			
-			<h2>Objects</h2>
+			<h2>Employing Objects</h2>
 			
 			<section>
 				<p>
@@ -104,14 +104,34 @@
 				<h3>Extending an Object</h3>
 				<p>
 				In this tutorial, we are going to extend object Fungus with the prototype property
-				for the purpose of adding properties and methods that will be used for a specific instance of Fungus called Mushroom.
+				for the purpose of adding properties and methods
+				that will be used for a specific instance of Fungus called Mushroom.
 				Its additional properties will be button-color, button-size, stem-color, stem-size,
-				spores-color, spores-number, spores-texture, spores-shape and spores-size.
-				This time, we will not only employ get methods for each of the properties but also the set methods
-				for the editing of the added properties.
+				has-spores and spores-color. These properties will also have their own get and set methods.
+				The changes to script "Fungus.js" will be saved to a new file named "Mushroom.js".
+				We will also make an html file named "Mushroom.html" with a div within its body.
+				The value of the id attribute of div will be mushroom-js.
+				The extensions of Fungus to be written below the Fungus function will be the following:
 				</p>
-				
-			</section>	
+				<pre>Fungus.prototype.button-color = [];</pre>
+				<pre>Fungus.prototype.button-size = [];</pre>
+				<pre>Fungus.prototype.stem-color = [];</pre>
+				<pre>Fungus.prototype.stem-size = [];</pre>
+				<pre>Fungus.prototype.has-spores = [];</pre>
+				<pre>Fungus.prototype.spores-color = [];</pre>
+				<br/>
+				<p>
+				The Fungus extensions are arrays that will be discussed
+				in the next subtopic of Employing Objects.
+				We will implement an init function below the Fungus extensions this time.
+				</p>
+				<pre>function init()</pre>
+				<pre>{</pre>
+				<pre>  var panel = document.getElementById("mushroom-js");</pre>
+				<pre>  var Mushroom = new Fungus("I am a cute baby Mushroom!");</pre>
+				<pre>}</pre>
+				<pre>document.addEventListener( "DOMContentLoaded", init, false );</pre>
+				</section>	
 				
 			<br/><br/>
 			
