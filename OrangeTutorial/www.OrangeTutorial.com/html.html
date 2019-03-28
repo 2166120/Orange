@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Orange HTML Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="styles/css.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('a').click(function(){
+    			var selected = $(this);
+    			$('a').removeClass('active');
+    			$(selected).addClass('active');
+    		});
+
+    		var $a = $('.a'),
+    		$b = $('.b'),
+    		$c = $('.c'),
+    		$d = $('.d'),
+        $e = $('.e'),
+    		$home = $('.home'),
+    		$introduction = $('.introduction'),
+    		$syntax = $('.syntax'),
+    		$colors = $('.colors'),
+        $backgrounds = $('.backgrounds');
+
+    		$a.click(function(){
+    			$home.fadeIn();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+    		});
+    		$b.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeIn();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$c.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeIn();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$d.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeIn();
+          $backgrounds.faceOut();
+            });
+        $e.click(function() {
+          $home.fadeOut();
+        	$introduction.fadeOut();
+        	$syntax.fadeOut();
+    			$colors.fadeOut();
+          $backgrounds.fadeIn();
+            });
+    	});
+    </script>
+</head>
+
+<body background="images/background.jpg">
+
+<div class="nav">
+    <a class="a active" href="#">Home</a>
+    <a class="b" href="#">HTML</a>
+    <a class="c" href="#">HTML Document Structure</a>
+    <a class="d" href="#">HTML Document Components</a>
+    <a class="e" href="#">HTTP</a>
+    <a class="f" href="#">HTTP Fundamentals</a>
+    <a class="g" href="#">Resource Addressing</a>
+    <a class="h" href="#">HTTP Request Messages</a>
+    <a class="i" href="#">HTTP Request Messages</a>
+</div>
+
+<div class="content">
+	 <div class="home">
+     <h3>HTML Introduction</h3>
+     <p>
+       Today, Many developers use html combined with stylesheets and scripts to create websites, blog and etc.
+	   html became so popular that even normal users can understand. But did you know that there is very interesting
+	   story about html? yes there is, in this story you will learn the versions of html and even the history of browsers.
+	   Moreover, the story will tell the you the heroes who created the html to internet. Be thankful becuase they are still
+	   alive. You coud actually email them and chat with them.<br>
+	   The story starts with the man named Tim Berners-Lee, when he invented the World Wibe Web. Tim then created html as 
+       the langauge for the web content. The document langauge is called html tags. During that time the very first browser
+       was release named Mosaic Browser. After a year, Large companies is starting to develop thier browser and even underestimated
+       the importance of the web.Years after, a much stable version of html was release and during that period a new Browser emerged
+       named Netscape, it was the first popular browser at that time(Did you know that old browser are text only?).
+     </p>
+</div>
+
+	 <div class="introduction"> <h4>What is HTML?</h4> <p> <ul> <li>HTML stands
+        for HyperText Transfer Protocol</li> <li>HTML defines the contents of
+        webpage</li> <li>It is easy to learn yet very powerful</li> <li>It is a series
+        of codes that is translated by a browsers to be viewed</li> </ul> </p>
+  <h4>What is HTML for?</h4> <p> HTML is for defining the stucture of the
+    paragraphs, images, and their overall presentation. </p> </div>
+
+	 <div class="syntax">
+	 	<h3>HTML Structure</h3>
+       <p>
+         -version information (i.e. DOCTYPE) refers to a Document Type Definition (DTD) and it is based
+         on a rules which is the Standard Generalized Markup Language for the browsers to correct the content.<br><br>
+         Root element (html)   
+         A header segment containing archive metadata delimited by the head component. <br><br>
+         A HTML document has two parts: <br><br>
+         Head - a component that contains a title and a metadata of the web documents.<br><br>
+         Body - a component contains the data that you need to show on a website page.<br><br>
+         In HTML5, the tag frameset <frameset> is not supported. <br> 
+        <br><h3>Syntax</h3>
+         &lt;html&gt;<br><br>
+         &emsp;&lt;head&gt;<br>
+         &emsp;&emsp;&lt;title&gt;Title of the Web Page&lt;/title&gt;<br>
+         &emsp;&lt;/head&gt;<br><br>
+         &emsp;&lt;body&gt;<br>
+         &emsp; &emsp;Content of the Web Page<br>
+         &emsp;&lt;/body&gt;<br><br>
+         &lt;html&gt;<br><br>
+       </p>
+	 </div>
+
+	 <div class="colors">
+	   HTML 4.01 DOCTYPE<br><br>
+       HTML 4.01 Strict Document Type Definition (DTD)<br> 
+       Strict Document Type Definition excludes the elements and attributes that W3C expects
+       to remove permanently as support for style sheets.<br>
+       HTML 4.01 Transitional<br>
+       to remove permanently as support for style sheets.<br>
+       HTML 4.01 Frameset<br>
+       Frameset Document Type Definition that is used for  documents that has frames.<br><br>
+       XHTML 1.0 DOCTYPE<br><br>
+       XHTML 1.0 Strict<br>
+       Extensible HTML version 1.0 Strict DTD gets rid of presentational labels and qualities, and is in fact extremely strict.<br>
+       XHTML 1.0 Transitional<br>
+       Extensible HTML version 1.0 Transitional DTD in which it is the same as HTML 4.01 Strict but for some exception that differs between SGML and XML. <br>
+       XHTML 1.0 Frameset<br>
+       Extensible HTML version 1.0 Frameset DTD utilized when Frames are to partition the browser into at least two frames. The Frameset DTD incorporates everything in the transitional DTD in addition to frames.<br>
+	 </div>
+
+   <div class="backgrounds">
+
+   </div>
+
+</div>
+
+</body>
+
+<footer>
+    <div class="footer">
+    	<a href="index.html">
+    	<img src="images/orange.png" class="logo">
+        <div id="try">
+	        <p>OrangeTutorials&copy; 2018-19</p>
+	        <p>OrangeTutorial@slu.edu.ph</p>
+	        <p>Baguio City, Philippines</p>
+	        <p>0985496325</p>
+        <a href="https://mail.google.com">
+            <img src="images/gm.png" height="35" width="35" alt="gm logo"/>
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/fb.png" height="35" width="35" alt="fb logo"/>
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/ig.png" height="35" width="35" alt="ig logo"/>
+        </a>
+        <a href="https://www.pinterest.ph">
+            <img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
+        </a>
+        </div>
+    </div>
+</footer>
+</html>

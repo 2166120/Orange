@@ -1,149 +1,108 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+<html lang="en">
+<head>
+    <title>JavaScript Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <meta charset="utf-8"/>
+</head>
 
-	<body>
-		<div class="topic" id="js">
-			<h1>JS: JavaScript</h1>
-			<p>
-			NOTE: If you are going to write JavaScript (JS) as an external source, always write the following:
-			</p>
-			<pre>&ltscript type = "text/javascript" src = "JS-program-name.js"&gt&lt/script&gt</pre>
-			<p>
-			If JS is going to manipulate a part of Hypertext Markup Language (HTML),
-			then put the following within the body of an HTML file:
-			</p>
-			<pre>&ltdiv id="id-name"&gt&lt/div&gt</pre>
-			<p>
-			The form of the main method in JS that will be used for the execution of the program:
-			</p>
-			<pre>function init()</pre>
-			<pre>{</pre>
-			<pre>  var panel = document.getElementById("id-name");</pre>
-			<pre>  //insert executable code here</pre>
-			<pre>}</pre>
-			<pre>document.addEventListener("DOMContentLoaded", init, false);</pre>
-			
-			<br/><br/>
-			
+<body>
+	<div class="topic" id="js">
+			<h1>JavaScript</h1>
 			<h2>Employing Objects</h2>
-			
-			<section>
-				<p>
-				Object is an entity with properties (variables or constants) that store data and methods (functions) that perform tasks.
-				</p>
-				<h3>Types of Objects</h3>
-				<ul><dl>
-					<li><dt>Built-in Objects</dt>
-					<dd>- objects with useful features that are part of the JS language</dd>
-					<li><dt>Document Object Model (DOM) Objects</dt>
-					<dd>- objects that are web page components with hierarchical arrangement</dd>
-					<li><dt>Custom Objects</dt>
-					<dd>- customized objects made by the author for storing data and providing functionalities</dd>
-				</ul></dl>
-			</section>
-			
+
+			<h3>Creating an Object</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
 			<br/>
-			
-			<section>
-				<h3>Creating an Object</h3>
-				<p>
-				Object Definition Syntax:
-				</p>
-				<pre>function Object-name(parameter1, parameter2)</pre>
-				<pre>{</pre>
-				<pre>  this.first-property = parameter1;</pre>
-				<pre>  this.second-property = parameter2;</pre>
-				<br/>
-				<pre>  this.first-method = function1;</pre>
-				<pre>  this.second-method = function2;</pre>
-				<pre>}</pre>
-				<p>
-				Now we will make a JS file "Fungus.js". The object will be named Fungus.
-				Its properties in this program will be cell-type, cell-number and message.
-				To get the values of cell-type, cell-number and message, we will also employ
-				the methods get-cell-type, get-cell-number and get-message.
-				We will set the message so there will be a set-message.
-				The program to be written will be the following:
-				</p>
-				<pre>function Fungus(message)</pre>
-				<pre>{</pre>
-				<pre>  this.cell-type = "Eukaryotic";</pre>
-				<pre>  this.cell-number = "Multi";</pre>
-				<pre>  this.message = message;</pre>
-				<pre>  this.get-cell-type = get-cell-type;</pre>
-				<pre>  this.get-cell-number = get-cell-number;</pre>
-				<pre>  this.get-message = get-message;</pre>
-				<pre>  this.set-message = set-message;</pre>
-				<pre>}</pre>
-				<br/>
-				<p>
-				For the methods to work, we will also give them the functions
-				that returns the values of cell-type and cell-number in the following:
-				</p>
-				<pre>function get-cell-type() { return cell-type; }</pre>
-				<pre>function get-cell-number() { return cell-number; }</pre>
-				<pre>function get-message() { return message; }</pre>
-				<pre>function set-message( message ) { this.message = message; }</pre>
-				<p>
-				There, you created an object. How about typing whatever message the Fungi has in this text area:
-				</p>
-				<textarea>
-				
-				</textarea>
-				<button>
-				Send Message From Fungi
-				</button>
-			</section>	
-				
-			<br/><br/>
-			
-			<section>
-				<h3>Extending an Object</h3>
-				<p>
-				In this tutorial, we are going to extend object Fungus with the prototype property
-				for the purpose of adding properties and methods
-				that will be used for a specific instance of Fungus called Mushroom.
-				Its additional properties will be button-color, button-size, stem-color, stem-size,
-				has-spores and spores-color. These properties will also have their own get and set methods.
-				The changes to script "Fungus.js" will be saved to a new file named "Mushroom.js".
-				We will also make an html file named "Mushroom.html" with a div within its body.
-				The value of the id attribute of div will be mushroom-js.
-				The extensions of Fungus to be written below the Fungus function will be the following:
-				</p>
-				<pre>Fungus.prototype.button-color = [];</pre>
-				<pre>Fungus.prototype.button-size = [];</pre>
-				<pre>Fungus.prototype.stem-color = [];</pre>
-				<pre>Fungus.prototype.stem-size = [];</pre>
-				<pre>Fungus.prototype.has-spores = [];</pre>
-				<pre>Fungus.prototype.spores-color = [];</pre>
-				<br/>
-				<p>
-				The Fungus extensions are arrays that will be discussed
-				in the next subtopic of Employing Objects.
-				We will implement an init function below the Fungus extensions this time.
-				</p>
-				<pre>function init()</pre>
-				<pre>{</pre>
-				<pre>  var panel = document.getElementById("mushroom-js");</pre>
-				<pre>  var Mushroom = new Fungus("I am a cute baby Mushroom!");</pre>
-				<pre>}</pre>
-				<pre>document.addEventListener( "DOMContentLoaded", init, false );</pre>
-				</section>	
-				
-			<br/><br/>
-			
-			<section>
-				<h3>Creating an Array Object</h3>
-				<p>
-				
-				</p>
-				<ol>
-				
-				</ol>
-			</section>
+
+			<h3>Extending an Object</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Creating an Array Object</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Looping through Elements</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Adding Array Elements</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Joining and Slicing Arrays</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Sorting Array Elements</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
+			<br/>
+
+			<h3>Catching Exceptions</h3>
+			<p>
+
+			</p>
+			<ol>
+
+			</ol>
 		</div>
-	</body>
-</html>
+
+		<footer>
+    <div class="footer">
+        <p>OrangeTutorials&copy; 2018-19<br>
+            OrangeTutorial@slu.edu.ph<br>
+            Baguio City, Philippines<br>
+            0985496325<br>
+        </p>
+        <a href="https://mail.google.com">
+            <img src="images/gm.png" height="35" width="35" alt="gm logo"/>
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/fb.png" height="35" width="35" alt="fb logo"/>
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/ig.png" height="35" width="35" alt="ig logo"/>
+        </a>
+        <a href="https://www.pinterest.ph">
+            <img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
+        </a>
+    </div>
+</footer>
+
+</body>

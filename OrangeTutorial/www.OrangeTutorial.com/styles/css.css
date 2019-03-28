@@ -10,6 +10,13 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.logo {
+  width: 7.5%;
+  height: 73%;
+  float: left;
+}
+
 .nav{
     width: 350px;
     height: auto;
@@ -72,72 +79,66 @@ a.active, .nav a:hover{
         top: 25%;
     }
     .home{
-      position: absolute;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
+      max-width: 600px;
+      max-height: 600px;
       background-color: black;
-      right: 10px;
-      top: -130px;
+      /*right: 10px;*/
       color: white;
       font-family: Verdana, serif;
       padding: 0 80px;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 15px;
+  
       display: none;
     }
     .introduction{
-        position: absolute;
-        background-color: black;
-        opacity: 0.5;
-        right: 10px;
-        top: -130px;
-        color: white;
-        font-family: Verdana, serif;
-        padding: 0 60px;
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 15px;
-        display: none;
-    }
-    .syntax{
-      position: absolute;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
+      max-width: 600px;
       background-color: black;
-      opacity: 0.5;
-      right: 10px;
-      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
-      margin-bottom: 15px;
+      display: none;
+    }
+    .syntax{
+      margin-left: -500px !important;
+      margin-right: 500px !important;
+      max-width: 600px;
+      background-color: black;
+      color: white;
+      font-family: Verdana, serif;
+      padding: 0 60px;
+      font-size: 14px;
+      line-height: 20px;
       display: none;
     }
     .colors{
-      position: absolute;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
+      max-width: 600px;
       background-color: black;
-      opacity: 0.5;
-      right: 10px;
-      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
-      margin-bottom: 15px;
       display: none;
     }
     .backgrounds{
-      position: absolute;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
+      max-width: 600px;
       background-color: black;
-      opacity: 0.5;
-      right: 10px;
-      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
-      margin-bottom: 15px;
       display: none;
     }
     .footer{
@@ -149,14 +150,14 @@ a.active, .nav a:hover{
         color: #fff;
         cursor: default;
     }
-    .footer p{
+/*    .footer p{
         font-size: 13px;
         font-family: Karla, sans-serif;
         border-bottom: 1px solid grey;
         padding: 10px;
         color: lightgray;
         line-height: 20px;
-    }
+    }*/
     .footer img{
         transition: all ease 0.5s;
         transform: scale(1);
@@ -164,3 +165,23 @@ a.active, .nav a:hover{
     .footer img:hover{
         transform: scale(1.2);
     }
+
+    #try {
+      text-align: center;
+      width: 90%;
+    }
+
+a, a:visited {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-left: 350px !important;
+    margin-right: 100px !important;
+  }
+  .introduction {
+    margin-left: 350px !important;
+    margin-right: 150px !important;
+  }
+}
