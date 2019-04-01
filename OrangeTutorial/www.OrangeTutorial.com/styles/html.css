@@ -11,25 +11,12 @@ html, body{
     background-repeat: no-repeat;
 }
 
-.navbar{
-    text-align: center;
-    padding: 20px;
-    background-image: url(../images/navigationbars.jpg);
+.logo {
+  width: 7.5%;
+  height: 73%;
+  float: left;
 }
-.navbar a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-family: Karla, sans-serif;
-    margin-right: 80px;
-    border: 2px solid transparent;
-    padding: 10px;
-    transition: 0.3s;
-}
-.navbar a:hover{
-    background: grey;
-    border: 2px solid #fff;
-}
+
 .nav{
     width: 350px;
     height: auto;
@@ -92,29 +79,30 @@ a.active, .nav a:hover{
         top: 25%;
     }
     .home{
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
       max-width: 600px;
-      line-height: 1000px;
+      max-height: 600px;
       background-color: black;
+      /*right: 10px;*/
       color: white;
       font-family: Verdana, serif;
       padding: 0 80px;
       font-size: 16px;
-      line-height: 50px;
+      line-height: 24px;
+
       display: none;
     }
     .introduction{
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: -500px !important;
+      margin-right: 500px !important;
       max-width: 600px;
-      line-height: 1000px;
       background-color: black;
       color: white;
       font-family: Verdana, serif;
-      padding: 0 80px;
-      font-size: 16px;
-      line-height: 25px;
+      padding: 0 60px;
+      font-size: 14px;
+      line-height: 24px;
       display: none;
     }
     .syntax{
