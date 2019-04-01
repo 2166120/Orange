@@ -43,7 +43,7 @@
 			
 	<br/><br/>
 			
-	<h2>Employing Objects</h2>
+	<h2>Objects</h2>
 	<section>
 		<p>
 			Object is an entity with properties (variables or constants) that store data and
@@ -121,6 +121,7 @@
 	<section>
 		<h3>Extending an Object</h3>
 		<p>
+			In extending the Fungus objects, we are still going to use the "Fungus.js" file and save in it.
 			Since not all fungi have the properties of a mushroom,
 			we are going to extend object Fungus with its prototype property
 			for the purpose of adding properties and methods outside of Fungi constructor
@@ -139,7 +140,7 @@
 		<pre>Fungus.prototype.button-size = "big";</pre>
 		<pre>Fungus.prototype.stem-color = "yellow";</pre>
 		<pre>Fungus.prototype.stem-length = "short";</pre>
-		<pre>Fungus.prototype.has-spores = true;</pre>
+		<pre>Fungus.prototype.has-spores = false;</pre>
 		<pre>Fungus.prototype.spores-color = "white";</pre>
 		<br/>
 		<pre>Fungus.prototype.get-button-color = function() { return button-color; };</pre>
@@ -156,9 +157,16 @@
 		<pre>Fungus.prototype.set-has-spores = function(has-spores) {  this.has-spores = has-spores; };</pre>
 		<pre>Fungus.prototype.set-button-color = function(spores-color) {  this.spores-color = spores-color; };</pre>
 		<p>
+			Now, we are going to employ the init function.
+		</p>
+		<br/>
+		<p>
 			There you go! Here is a cute mushroom with the properties above.
 		</p>
 		<!--Insert Mushroom Image Here-->
+		<button>
+			
+		</button>
 	</section>	
 				
 	<br/><br/>
@@ -166,7 +174,8 @@
 	<section>
 		<h3>Creating an Array Object</h3>
 		<p>
-				
+			Now, in creating Array Objects, we are going to change the name of the Fungus Constructor into
+			Mushroom. All of the changes done here will be saved in "Mushroom.js".
 		</p>
 	</section>
 	</div>
