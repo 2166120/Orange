@@ -1,39 +1,56 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Orange Tutorials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<meta charset="utf-8"/>
 	</head>
 
 	<body>
-		<div class="navigation-bar">
-				<a href="#subjects">SUBJECT</a>
-				<a href="#about">ABOUT</a>
-				<a href="#contact">CONTACT</a>
-		</div>
+    <div class="background">
+      <nav>
+  		    <div class="logo">
+            <a href="index.html">
+              <img src="images/orange.png" height="45" width="65" alt="Company logo">
+            </a>
+          </div>
+          <ul class="navigation-bar">
+            <li><a href="#subjects">SUBJECT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+      </nav>
 
-		<div class="subjects-section" id="subjects">
-			<h2>SUBJECTS</h2>
-			<div class="image">
-				<a href="css.html">
-					<img src="images/css.png" alt="css tutorial"/>
-				</a>
-			</div>
-			<div class="image">
-				<a href="html.html">
-					<img src="images/html.png" alt="html tutorial"/>
-				</a>
-			</div>
-			<div class="image">
-				<a href="js.html">
-					<img src="images/js.png" alt="js tutorial"/>
-				</a>
-			</div>
-		</div>
+  		<div class="subjects-section" id="subjects">
+  			<div class="image">
+  				<a href="css.html">
+  					<img src="images/css.png" alt="css tutorial"/>
+  				</a>
+  			</div>
+  			<div class="image">
+  				<a href="html.html">
+  					<img src="images/html.png" alt="html tutorial"/>
+  				</a>
+  			</div>
+  			<div class="image">
+  				<a href="js.html">
+  					<img src="images/js.png" alt="js tutorial"/>
+  				</a>
+  			</div>
+  		</div>
+
+      <div class="head-content">
+        <p class="company-name">Orange Tutorials</p>
+        <p class="tag">Keep yourself educated & never stop learning.</p>
+      </div>
+
+    </div>
 
 		<div class="about-section" id="about">
-			<h2>About Us</h2>
+			<h1>About Us</h1>
 			<p>
 			Orange Website is an interactive Website application that helps the users to learn and at the<br>
 			same time have fun in learning one topic each from Hypertext Markup Language (HTML),<br>
@@ -42,34 +59,36 @@
 		  </p>
 		</div>
 
-		<div class="contact-section" id="contact">
-				<h2>Contact Us</h2>
-				<div class="inputs">
-						<textarea rows="10" class="inpt-msg" cols="40" placeholder="Your message"></textarea>
-						<input type="button" class="inp-btn" value="Submit">
-				</div>
-		</div>
-		<footer>
-        <div class="footer">
-            <p>OrangeTutorials&copy; 2018-19<br>
-                OrangeTutorial@slu.edu.ph<br>
-                Baguio City, Philippines<br>
-                0985496325<br>
-            </p>
-						<a href="https://mail.google.com">
-								<img src="images/gm.png" height="35" width="35" alt="gm logo"/>
-						</a>
-						<a href="https://www.facebook.com">
-								<img src="images/fb.png" height="35" width="35" alt="fb logo"/>
-						</a>
-						<a href="https://www.instagram.com">
-								<img src="images/ig.png" height="35" width="35" alt="ig logo"/>
-						</a>
-						<a href="https://www.pinterest.ph">
-								<img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
-						</a>
-        </div>
-    </footer>
+    <div id="contact">
+    <h2>Contact Us</h2>
+
+  	<div class="form-container">
+  	    <div class="form">
+  	      <form>
+  	        <input type="text" placeholder="Name">
+  	        <input type="text" placeholder="Email">
+  	        <textarea placeholder="Message"></textarea>
+  	        <button>Submit</button>
+  	      </form>
+  	    </div>
+  	    <div class="info">
+  	      <h3>Orange Tutorials&copy; 2018-19</h3>
+  	      <p>Online Teachers<br>
+  		       Baguio City, Philippines<br>
+  	      </p>
+  	      <p><i class="fas fa-envelope"></i> orangeTutors@gmail.com
+  		  <br>
+  	      <i class="fas fa-phone"></i> (437) 978-2345
+  		  </p>
+  	    </div>
+  	</div>
+
+    </div>
+
+  <div class="footer">
+		<p>OrangeTutorials <i class="fa fa-copyright" aria-hidden="true"></i> 2019</p>
+  </div>
+
 	</body>
 
 </html>

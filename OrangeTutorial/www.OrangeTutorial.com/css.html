@@ -3,7 +3,9 @@
 
 <head>
     <title>Orange CSS Tutorial</title>
-    <link rel="stylesheet" type="text/css" href="styles/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script>
 	$(document).ready(function(){
@@ -17,79 +19,124 @@
     		$c = $('.c'),
     		$d = $('.d'),
         $e = $('.e'),
-    		$home = $('.home'),
-    		$introduction = $('.introduction'),
-    		$syntax = $('.syntax'),
-    		$colors = $('.colors'),
-        $backgrounds = $('.backgrounds');
+        $f = $('.f'),
+        $introduction = $('.introduction'),
+    		$boxmodel = $('.boxmodel'),
+    		$margin = $('.margin'),
+    		$padding = $('.padding'),
+        $border = $('.border'),
+        $tables = $('.tables');
     		$a.click(function(){
-    			$home.fadeIn();
-    			$introduction.fadeOut();
-    			$syntax.fadeOut();
-				  $colors.fadeOut();
-          $backgrounds.faceOut();
-    		});
-    		$b.click(function() {
-          $home.fadeOut();
+    			$boxmodel.fadeOut();
     			$introduction.fadeIn();
-    			$syntax.fadeOut();
-				  $colors.fadeOut();
-          $backgrounds.faceOut();
+    			$margin.fadeOut();
+				  $padding.fadeOut();
+          $border.faceOut();
+          $tables.faceOut();
+    		    });
+    		$b.click(function() {
+          $boxmodel.fadeIn();
+    			$introduction.fadeOut();
+    			$margin.fadeOut();
+				  $padding.fadeOut();
+          $border.faceOut();
+          $tables.faceOut();
             });
     		$c.click(function() {
-          $home.fadeOut();
+          $boxmodel.fadeOut();
     			$introduction.fadeOut();
-    			$syntax.fadeIn();
-				  $colors.fadeOut();
-          $backgrounds.faceOut();
+    			$margin.fadeIn();
+				  $padding.fadeOut();
+          $border.faceOut();
+          $tables.faceOut();
             });
     		$d.click(function() {
-          $home.fadeOut();
+          $boxmodel.fadeOut();
     			$introduction.fadeOut();
-    			$syntax.fadeOut();
-				  $colors.fadeIn();
-          $backgrounds.faceOut();
+    			$margin.fadeOut();
+				  $padding.fadeIn();
+          $border.faceOut();
+          $tables.faceOut();
             });
         $e.click(function() {
-          $home.fadeOut();
+          $boxmodel.fadeOut();
         	$introduction.fadeOut();
-        	$syntax.fadeOut();
-    			$colors.fadeOut();
-          $backgrounds.fadeIn();
+        	$margin.fadeOut();
+    			$padding.fadeOut();
+          $border.fadeIn();
+          $tables.faceOut();
+            });
+        $f.click(function() {
+          $tables.fadeIn();
+          $boxmodel.fadeOut();
+          $introduction.fadeOut();
+          $margin.fadeOut();
+        	$padding.fadeOut();
+          $border.faceOut();
             });
     	});
     </script>
 </head>
 
-<body background="images/background.jpg">
+<body background="images/home.jpg">
 
-  <div class="navbar">
-      <a href="index.html">HOME</a>
-      <a href="js.html">JavaScript</a>
-      <a href="css.html">CSS</a>
-      <a href="html.html">HTML</a>
-  </div>
+  <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/orange.png" height="45" width="65" alt="Company logo">
+        </a>
+      </div>
+      <ul class="navigation-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="js.html">JavaScript</a></li>
+      </ul>
+  </nav>
 
-<div class="nav">
-    <a class="a active" href="#">Home</a>
-    <a class="b" href="#">CSS Introduction</a>
-    <a class="c" href="#">Syntax</a>
-    <a class="d" href="#">Colors</a>
-    <a class="e" href="#">Backgrounds</a>
-    <a class="f" href="#">Borders</a>
-    <a class="g" href="#">Margins</a>
-    <a class="h" href="#">Outline</a>
-    <a class="i" href="#">Text</a>
+<div class="navigation">
+    <a class="a active" href="#">CSS Introduction</a>
+    <a class="b" href="#">CSS: Box Model</a>
+    <a class="c" href="#">CSS Margin</a>
+    <a class="d" href="#">CSS Padding</a>
+    <a class="e" href="#">CSS Border</a>
+    <a class="f" href="#">CSS Tables</a>
 </div>
 
 <div class="content">
-	 <div class="home">
-     <h3>CSS Tutorial</h3>
+	 <div class="boxmodel">
+     <h3>What is Box Model?</h3>
      <p>
-     CSS is a language that describes the style of an HTML document.<br>
-     CSS describes how HTML elements should be displayed.<br>
-     This tutorial will teach you CSS from basic to advanced.<br>
+       Every element that can be displayed is comprised of one or more rectangular boxes. CSS box model typically
+       describes how these rectangular boxes are laid out on a web page. These boxes can have different properties
+       and can interact with each other in different ways, but every box has a content area and optional surrounding
+       margin, padding, and border.<br>
+       The following diagram demonstrates how the margin, padding, and border CSS properties determines how much space
+       an element can take on a web page.
      </p>
+     <img src="images/css-box-model.jpg" alt="box model diagram">
+     <h3>Width & Height of Elements</h3>
+     <p>
+       Usually when you set the width and height of an element using the CSS width and height properties, in reality
+       you are only setting the width and height of the content area of an element. The actual width and height of the
+       element's box depend on several factors.<br>
+       The actual space that an element's box might take is calculated like this:<br>
+    </p>
+    <table>
+    <tr>
+      <th>Box Size</th>
+      <th>CSS Properties</th>
+    </tr>
+    <tr>
+      <td>Total Width</td>
+      <td>width + padding-left + padding-right + border-left + border-right + margin-left + margin-right</td>
+    </tr>
+    <tr>
+      <td>Total Height</td>
+      <td>height + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom</td>
+    </tr>
+    </table>
+    <p><b>Note: </b>In CSS box model; content area of the element's box is the area, where text, images, lists, tables, forms, videos, etc. appears.</p>
 	 </div>
 
 	 <div class="introduction">
@@ -102,12 +149,12 @@
          <li>External stylesheets are stored in CSS files</li>
        </ul>
      </p>
-     <h4>Why use CSS</h4>
+     <h3>Why use CSS</h3>
      <p>
        CSS is used to define styles for your web pages, including the design, layout and variations in display<br>
        for different devices and screen sizes.
      </p>
-     <h4>CSS Solved a Big Problem</h4>
+     <h3>CSS Solved a Big Problem</h3>
      <p>
        HTML was NEVER intended to contain tags for formatting a web page!<br>
        HTML was created to describe the content of a web page, like:<br>
@@ -121,19 +168,173 @@
      </p>
 	 </div>
 
-	 <div class="syntax">
-
-	 </div>
-
-	 <div class="colors">
-
-	 </div>
-
-   <div class="backgrounds">
-
+	 <div class="margin">
+    <h3>CSS Margin</h3>
+    <p>
+       Margin clears an area around the border that separates it from other boxes.
+    </p>
+    <h3><br>CSS Margin Properties</h3>
+    <p>
+      The CSS margin properties allow you to set the margins around the sides of an element's box. The margins does not have
+      a background-color, it is completely transparent.
+    </p>
+    <h3><br>Setting Margins for Individual Sides</h3>
+    <p>
+      You can easily specify the different margins for the different sides of an element such as top, right, bottom or left
+      side using the CSS individual margin property.
+    </p>
+    <h4>Example</h4>
+      <p class="ridge">
+      h1 { <br>
+      margin-bottom: 20px;<br>
+      }<br>
+      p {<br>
+      margin-left: 10px;<br>
+      margin-right: 30px;<br>
+      }<br>
+      </p>
+    <h3>The margin Shorthand Property</h3>
+     <p>The margin property is a shorthand property to avoid setting margin of each side separately: <br>
+       margin-top, margin-right, margin-bottom and margin-left.<br>
+       <h4>Example</h4>
+     </p>
+     <p class="ridge">
+       h1 {<br>
+           margin: 0 10px;<br>
+       }<br>
+       p {<br>
+           margin: 25px 50px 75px 100px;<br>
+       }<br>
+     </p>
+     <p>This shorthand notation can take one, two, three, or four whitespace separated values.</p>
+     <ul>
+       <li>If one value is set, this is applied to all the four sides.</li>
+       <li>If two values are specified, the first value is applied to the top and bottom, and the second value is applied to the right and left side.</li>
+       <li>If three values are specified, the first value is applied to the top, second value is applied to left and right side and the last value is applied to the bottom.</li>
+       <li>If four values are specified, they are applied to the top, right, bottom and the left side respectively in the specified order.</li>
+     </ul>
    </div>
 
-</div>
+   <div class="padding">
+     <h3>CSS Padding</h3>
+     <p>The padding area is the space between the content of the element and its border.</p>
+     <h3>CSS Pading Properties</h3>
+     <p>The CSS padding properties allow you to set the padding area for an element that separates its border from its content. The padding is affected by the background-color of the box.</p>
+     <h3>Define Paddings for Individual Sides</h3>
+     <p>You can easily specify the different paddings for the different sides of an element such as top, right, bottom or left side using the CSS individual padding property.</p>
+     <h4>Example</h4>
+     <p class="ridge">
+       h1 {<br>
+           padding-bottom: 10px;<br>
+       }<br>
+       p {<br>
+           padding-top: 20px;<br>
+           padding-left: 50px;<br>
+       }<br>
+     </p>
+     <h3>The padding Shorthand Property</h3>
+     <p>The padding property is a shorthand property to avoid setting padding for each side of an element separately i.e. padding-top, padding-right, padding-bottom, padding-left.</p>
+     <p class="ridge">
+       h1 {<br>
+           padding: 10px 20px;<br>
+       }<br>
+       p {<br>
+           padding: 10px 15px 20px 25px;<br>
+       }<br>
+     </p>
+     <p><b>Note:</b>Unlike CSS margin properties, values for padding properties cannot be negative. Like margin properties, percentage values for padding properties refer to the width of the generated box's containing block.<br>
+     <br> The padding property can take one, two, three, or four whitespace separated values.</p>
+     <ul>
+       <li>If one value is set, this is applied to all the four sides.</li>
+       <li>If two values are specified, the first value is applied to the top and bottom, and the second value is applied to the right and left side.</li>
+       <li>If three values are specified, the first value is applied to the top, second value is applied to left and right side and the last value is applied to the bottom.</li>
+       <li>If four values are specified, they are applied to the top, right, bottom and the left side respectively in the specified order.</li>
+     </ul>
+   </div>
 
+   <div class="border">
+     <h3>CSS Border</h3>
+     <p>Border of an element goes around the padding and content.</p>
+     <h3>CSS Border Properties</h3>
+     <p>
+       The CSS border properties allow you to define the border area of a box. The border can either be a predefined style like, solid line, double line, dotted line, etc. or it can
+       be an image. The following section will describe you how to set the various properties defining the style (border-style), color (border-color), and thickness (border-width) of the border.
+     </p>
+     <h3>The border-width Property</h3>
+     <p>The border-width property specifies the width of the border area. It is a shorthand property for setting the thickness of all the four sides of an element's border at the same time.</p>
+     <h4>Example</h4><br>
+     <p class="ridge">
+       p {<br>
+           border-width: medium 10px thick 15px;<br>
+       }<br>
+     </p>
+     <p><b>Note: </b>If the value for the border-width property is missing or not specified, the default value (medium) of the border-width will be used instead.</p>
+     <h3>The border-style Property</h3>
+     <p>The border-style property sets the style of a box's border such as: solid, dotted, etc. It is a shorthand property for setting the line style for all four sides of the elements border.<br>
+        The border-style property may take one of the following values: none, hidden, dashed, dotted, double, groove, inset, outset, ridge and solid.<br>
+     </p><br>
+     <p class="border1">none: Defines no border.</p><br>
+     <p class="border2">hidden: Defines hidden border.</p><br>
+     <p class="border3">dotted: Defines a dotted border</p><br>
+     <p class="border4">dashed: Defines a dashed border</p><br>
+     <p class="border5">solid: Defines a solid border</p><br>
+     <p class="border6">double: Defines two borders. The width of the two borders are same as the border-width value</p><br>
+     <p class="border7">groove: Defines a 3D grooved border. The effect depends on the border-color value</p><br>
+     <p class="border8">ridge: Defines a 3D ridged border. The effect depends on the border-color value</p><br>
+     <p class="border9">inset: Defines a 3D inset border. The effect depends on the border-color value</p><br>
+     <p class="border10">outset: Defines a 3D outset border. The effect depends on the border-color value</p><br>
+     <h4>Example</h4><br>
+     <p class="ridge">
+       p {<br>
+           border-style: dotted;<br>
+       }<br>
+     </p>
+   </div>
+
+   <div class="tables">
+     <h3>CSS Tables</h3>
+     <p>Tables are commonly used to present tabular data.</p><br>
+     <h3>Styling Tables with CSS</h3>
+     <p>
+        When you build an HTML table without any styles or attributes, browsers display them without any border. Styling a table with CSS can greatly improve its appearance.
+        The following sections will show you how to control the layout and presentation of the table elements using CSS to create elegant and consistent tables.<br><br>
+     </p>
+     <h3>Adding Borders to Tables</h3>
+     <p>
+       The CSS border property is the best way to define the borders for the tables.
+       The following example will set a black border for the &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements.<br>
+     </p><br>
+     <h4>Example</h4>
+     <p class="ridge">
+       table, th, td {<br>
+           border: 1px solid black;<br>
+       }<br>
+     </p><br>
+     <h3>Collapsing Table Borders</h3>
+     <p>
+       If you've seen the output of the previous example, you've noticed every table cell has separate borders as well as there is some space between the borders of adjacent table cells. It happens because table cell borders are separated by default. But, you can collapse the separate table borders into one by using the CSS border-collapse property.<br><br>
+       The border-collapse CSS property selects a table's border model.<br>
+       It can accept one of the two values collapse or separate.<br>
+       <ul>
+         <li>The separated model is the default HTML table border model in which each Adjacent cells have their own distinct borders.</li>
+         <li>In the collapsed border model, adjacent table cells share borders.</li>
+       </ul><br>
+       The style rules in the following example will collapse the table cell borders as well as apply the one pixel black border on the table and table cell elements.<br>
+     </p>
+     <h4><br>Example</h4>
+     <p class="ridge">
+       table {<br>
+           border-collapse: collapse;<br>
+       }<br>
+       table, th, td {<br>
+           border: 1px solid black;<br>
+       }
+     </p>
+     <p>
+     You can also remove the space between the table cell borders through setting the value of border-spacing property to 0. However, it only removes the space but do not merge the borders like when you set the border-collapse to collapse.<br>
+     <br><b>Note: </b>If a <!DOCTYPE> is not specified in the HTML document, the border-collapse CSS property may produce unexpected results.
+     </p>
+   </div>
+</div>
 </body>
 </html>
