@@ -10,26 +10,6 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.navbar{
-    text-align: center;
-    padding: 20px;
-    background-image: url(../images/navigationbars.jpg);
-}
-.navbar a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-family: Karla, sans-serif;
-    margin-right: 80px;
-    border: 2px solid transparent;
-    padding: 10px;
-    transition: 0.3s;
-}
-.navbar a:hover{
-    background: grey;
-    border: 2px solid #fff;
-}
-
 .nav{
     width: 350px;
     height: auto;
@@ -45,7 +25,7 @@ html, body{
     height: 50px;
     margin: 5px 0;
     float: left;
-    background-color: #ffd1b3;
+    background-color: #29C667;
     color: black;
     line-height: 50px;
     text-align: center;
@@ -92,66 +72,72 @@ a.active, .nav a:hover{
         top: 25%;
     }
     .home{
-      margin-left: -500px !important;
-      margin-right: 500px !important;
-      max-width: 600px;
-      max-height: 600px;
+      position: absolute;
       background-color: black;
-      /*right: 10px;*/
+      right: 10px;
+      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 80px;
       font-size: 16px;
       line-height: 24px;
-
+      margin-bottom: 15px;
       display: none;
     }
     .introduction{
-      margin-left: -500px !important;
-      margin-right: 500px !important;
-      max-width: 600px;
+        position: absolute;
+        background-color: black;
+        opacity: 0.5;
+        right: 10px;
+        top: 0px;
+        color: white;
+        font-family: Verdana, serif;
+        padding: 0 60px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        display: none;
+    }
+    .syntax{
+      position: absolute;
       background-color: black;
+      opacity: 0.5;
+      right: 10px;
+      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
-      display: none;
-    }
-    .syntax{
-      margin-left: -500px !important;
-      margin-right: 500px !important;
-      max-width: 600px;
-      background-color: black;
-      color: white;
-      font-family: Verdana, serif;
-      padding: 0 60px;
-      font-size: 14px;
-      line-height: 20px;
+      margin-bottom: 15px;
       display: none;
     }
     .colors{
-      margin-left: -500px !important;
-      margin-right: 500px !important;
-      max-width: 600px;
+      position: absolute;
       background-color: black;
+      opacity: 0.5;
+      right: 10px;
+      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
+      margin-bottom: 15px;
       display: none;
     }
     .backgrounds{
-      margin-left: -500px !important;
-      margin-right: 500px !important;
-      max-width: 600px;
+      position: absolute;
       background-color: black;
+      opacity: 0.5;
+      right: 10px;
+      top: -130px;
       color: white;
       font-family: Verdana, serif;
       padding: 0 60px;
       font-size: 14px;
       line-height: 24px;
+      margin-bottom: 15px;
       display: none;
     }
     .footer{
@@ -163,14 +149,14 @@ a.active, .nav a:hover{
         color: #fff;
         cursor: default;
     }
-/*    .footer p{
+    .footer p{
         font-size: 13px;
         font-family: Karla, sans-serif;
         border-bottom: 1px solid grey;
         padding: 10px;
         color: lightgray;
         line-height: 20px;
-    }*/
+    }
     .footer img{
         transition: all ease 0.5s;
         transform: scale(1);
@@ -178,23 +164,3 @@ a.active, .nav a:hover{
     .footer img:hover{
         transform: scale(1.2);
     }
-
-    #try {
-      text-align: center;
-      width: 90%;
-    }
-
-a, a:visited {
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .home {
-    margin-left: 350px !important;
-    margin-right: 100px !important;
-  }
-  .introduction {
-    margin-left: 350px !important;
-    margin-right: 150px !important;
-  }
-}

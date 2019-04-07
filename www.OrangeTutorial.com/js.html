@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Orange JS Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="css/html.css">
+    <meta charset="utf-8"/>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/js.js"></script>
+</head>
+
+<body background="images/background.jpg">
+
+  <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="js.html">JavaScript</a>
+      <a href="css.html">CSS</a>
+      <a href="html.html">HTML</a>
+  </div>
+
+<div class="nav">
+    <a class="a active" href="#">Home</a>
+    <a class="b" href="#">JS</a>
+    <a class="c" href="#">Topic: Employing Objects</a>
+    <a class="d" href="#">Creating an Object</a>
+    <a class="e" href="#">Extending an Object</a>
+    <a class="f" href="#">Creating an Array Objects</a>
+</div>
+
+<div class="topic" id="js">
+	<h1>JS: JavaScript</h1>
+	<p>
+		NOTE: If you are going to write JavaScript (JS) as an external source, always write the following:
+	</p>
+	<pre>&ltscript type = "text/javascript" src = "JS-program-name.js"&gt&lt/script&gt</pre>
+	<p>
+		If JS is going to manipulate a part of Hypertext Markup Language (HTML),
+		then put the following within the body of an HTML file:
+	</p>
+	<pre>&ltdiv id="id-name"&gt&lt/div&gt</pre>
+	<p>
+		The form of the main method in JS that will be used for the execution of the program:
+	</p>
+	<pre>function init()</pre>
+	<pre>{</pre>
+	<pre>  var panel = document.getElementById( "id-name" );</pre>
+	<pre>  //insert executable code here</pre>
+	<pre>}</pre>
+	<pre>document.addEventListener( "DOMContentLoaded", init, false );</pre>
+
+	<br/><br/>
+
+	<h2>Objects</h2>
+	<section>
+		<p>
+			Object is an entity with properties (variables or constants) that store data and
+			methods (functions) that perform tasks.
+			In this topic, we are going to create a JavaScript file named "Fungus.js".
+		</p>
+		<h3>Types of Objects</h3>
+		<ul><dl>
+			<li><dt>Built-in Objects</dt>
+			<dd>- objects with useful features that are part of the JS language</dd>
+			<li><dt>Document Object Model (DOM) Objects</dt>
+			<dd>- objects that are web page components with hierarchical arrangement</dd>
+			<li><dt>Custom Objects</dt>
+			<dd>- customized objects made by the author for storing data and providing functionalities</dd>
+		</ul></dl>
+	</section>
+
+	<br/><br/>
+
+	<section>
+		<h3>Creating an Object</h3>
+		<p>
+			Object Definition Syntax:
+		</p>
+		<pre>function Object-name(parameter1, parameter2)</pre>
+		<pre>{</pre>
+		<pre>  this.first-property = parameter1;</pre>
+		<pre>  this.second-property = parameter2;</pre>
+		<br/>
+		<pre>  this.first-method = function1;</pre>
+		<pre>  this.second-method = function2;</pre>
+		<pre>}</pre>
+		<p>
+			The Object Definition function is also called a Constructor.
+			Now we will make a JS file "Fungus.js". The object will be named Fungus.
+			Its properties in this program will be cell-type, cell-number and message.
+			To get the values of cell-type, cell-number and message, we will also employ
+			the methods get-cell-type, get-cell-number and get-message.
+			We will set the message so there will be a set-message.
+			The program to be written will be the following:
+		</p>
+		<pre>function Fungus(message)</pre>
+		<pre>{</pre>
+		<pre>  this.cell-type = "Eukaryotic";</pre>
+		<pre>  this.cell-number = "Multi";</pre>
+		<pre>  this.message = message;</pre>
+		<pre>  this.get-cell-type = get-cell-type;</pre>
+		<pre>  this.get-cell-number = get-cell-number;</pre>
+		<pre>  this.get-message = get-message;</pre>
+		<pre>  this.set-message = set-message;</pre>
+		<pre>}</pre>
+		<br/>
+		<p>
+			For the methods to work, we will also give them the functions
+			that returns the values of cell-type and cell-number in the following:
+		</p>
+		<pre>function get-cell-type() { return cell-type; }</pre>
+		<pre>function get-cell-number() { return cell-number; }</pre>
+		<pre>function get-message() { return message; }</pre>
+		<pre>function set-message(message) { this.message = message; }</pre>
+		<p>
+			There, you created an object. How about typing whatever message the Fungi has in this text area:
+		</p>
+		<textarea>
+			Hello, I'm a cute mushroom!
+		</textarea>
+		<button>
+			Send Message From Fungus
+		</button>
+		<!--Insert Mushroom Image Here With Message Producing Script Near It-->
+	</section>
+
+	<br/><br/>
+
+	<section>
+		<h3>Extending an Object</h3>
+		<p>
+			In extending the Fungus objects, we are still going to use the "Fungus.js" file and save in it.
+			Since not all fungi have the properties of a mushroom,
+			we are going to extend object Fungus with its prototype property
+			for the purpose of adding properties and methods outside of Fungi constructor
+			that will be used for a specific instance of Fungus called Mushroom.
+			Its additional properties that will be written below the Constructor are
+			button-color, button-size, stem-color, stem-length, has-spores and spores-color.
+			Their get methods are get-button-color, get-button-size, get-stem-color, get-stem-size,
+			get-has-spores and get-spores-color. Their set methods are set-button-color, set-button-size,
+			set-stem-color, set-stem-size, set-has-spores and set-spores-color.
+			All types of objects have the prototype property in JavaScript.
+			The additional properties and methods part of the program below
+			will be written below the Fungus Constructor.
+		</p>
+		<br/>
+		<pre>Fungus.prototype.button-color = "red";</pre>
+		<pre>Fungus.prototype.button-size = "big";</pre>
+		<pre>Fungus.prototype.stem-color = "yellow";</pre>
+		<pre>Fungus.prototype.stem-length = "short";</pre>
+		<pre>Fungus.prototype.has-spores = false;</pre>
+		<pre>Fungus.prototype.spores-color = "white";</pre>
+		<br/>
+		<pre>Fungus.prototype.get-button-color = function() { return button-color; };</pre>
+		<pre>Fungus.prototype.get-button-size = function() { return button-size; };</pre>
+		<pre>Fungus.prototype.get-stem-color = function() { return stem-color; };</pre>
+		<pre>Fungus.prototype.get-stem-length = function() { return stem-length; };</pre>
+		<pre>Fungus.prototype.get-has-spores = function() { return has-spores; };</pre>
+		<pre>Fungus.prototype.get-spores-color = function() { return spores-color; };</pre>
+		<br/>
+		<pre>Fungus.prototype.set-button-color = function(button-color) {  this.button-color = button-color; };</pre>
+		<pre>Fungus.prototype.set-button-size = function(button-size) {  this.button-size = button-size; };</pre>
+		<pre>Fungus.prototype.set-stem-color = function(stem-color) {  this.stem-color = stem-color; };</pre>
+		<pre>Fungus.prototype.set-stem-length = function(stem-length) {  this.stem-length = stem-length; };</pre>
+		<pre>Fungus.prototype.set-has-spores = function(has-spores) {  this.has-spores = has-spores; };</pre>
+		<pre>Fungus.prototype.set-button-color = function(spores-color) {  this.spores-color = spores-color; };</pre>
+		<p>
+			Now, we are going to employ the init function.
+		</p>
+		<br/>
+		<p>
+			There you go! Here is a cute mushroom with the properties above.
+		</p>
+		<!--Insert Mushroom Image Here-->
+		<button>
+
+		</button>
+	</section>
+
+	<br/><br/>
+
+	<section>
+		<h3>Creating an Array Object</h3>
+		<p>
+			Now, in creating Array Objects, we are going to change the name of the Fungus Constructor into
+			Mushroom. All of the changes done here will be saved in "Mushroom.js".
+		</p>
+	</section>
+	</div>
+</body>
+</html>

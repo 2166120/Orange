@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Orange HTML Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="css/html.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('a').click(function(){
+    			var selected = $(this);
+    			$('a').removeClass('active');
+    			$(selected).addClass('active');
+    		});
+
+    		var $a = $('.a'),
+    		$b = $('.b'),
+    		$c = $('.c'),
+    		$d = $('.d'),
+        $e = $('.e'),
+    		$home = $('.home'),
+    		$introduction = $('.introduction'),
+    		$syntax = $('.syntax'),
+    		$colors = $('.colors'),
+        $backgrounds = $('.backgrounds');
+
+    		$a.click(function(){
+    			$home.fadeIn();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+    		});
+    		$b.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeIn();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$c.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeIn();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$d.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeIn();
+          $backgrounds.faceOut();
+            });
+        $e.click(function() {
+          $home.fadeOut();
+        	$introduction.fadeOut();
+        	$syntax.fadeOut();
+    			$colors.fadeOut();
+          $backgrounds.fadeIn();
+            });
+    	});
+    </script>
+</head>
+
+<body background="images/background.jpg">
+
+<div class="nav">
+    <a class="a active" href="#">Home</a>
+    <a class="b" href="#">HTML Introduction</a>
+    <a class="c" href="#">Syntax</a>
+    <a class="d" href="#">Colors</a>
+    <a class="e" href="#">Backgrounds</a>
+    <a class="f" href="#">Borders</a>
+    <a class="g" href="#">Margins</a>
+    <a class="h" href="#">Outline</a>
+    <a class="i" href="#">Text</a>
+</div>
+
+<div class="content">
+	 <div class="home">
+     <h3>HTML Tutorial</h3>
+     
+	 </div>
+
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+
+
+	  <iframe width="420" height="315"
+     src="https://www.youtube.com/embed/bWPMSSsVdPk">
+     </iframe>
+
+       <iframe width="420" height="315"
+     src="https://www.youtube.com/embed/UB1O30fR-EE">
+     </iframe>
+      
+
+
+
+
+	 <div class="introduction">
+	 
+     <h4>What is HTML?</h4>
+     <p>
+       <ul>
+
+         <li>HTML stands for HyperText Markup Language</li>
+         <li>HTML is a Language, as it has code-words and syntax like any other language.</li>
+         <li>HyperText is the method by which you move around on the web — by clicking on special text called hyperlinks which bring you to the next page.</li>
+         <li>Markup is what HTML tags do to the text inside them. They mark it as a certain type of text</li>
+       </ul>
+     </p>
+    
+    
+    
+	 </div>
+
+	 <div class="syntax">
+
+	 </div>
+
+	 <div class="colors">
+
+	 </div>
+
+   <div class="backgrounds">
+
+   </div>
+
+</div>
+
+</body>
+
+<footer>
+    <div class="footer">
+        <p>OrangeTutorials&copy; 2018-19<br>
+            OrangeTutorial@slu.edu.ph<br>
+            Baguio City, Philippines<br>
+            0985496325<br>
+        </p>
+        <a href="https://mail.google.com">
+            <img src="images/gm.png" height="35" width="35" alt="gm logo"/>
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/fb.png" height="35" width="35" alt="fb logo"/>
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/ig.png" height="35" width="35" alt="ig logo"/>
+        </a>
+        <a href="https://www.pinterest.ph">
+            <img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
+        </a>
+    </div>
+</footer>
+</html>
