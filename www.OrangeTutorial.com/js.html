@@ -2,10 +2,63 @@
 <html lang="en">
 <head>
     <title>Orange JS Tutorial</title>
-    <link rel="stylesheet" type="text/css" href="css/html.css">
+    <link rel="stylesheet" type="text/css" href="css/js.css">
     <meta charset="utf-8"/>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/js.js"></script>
+    <script>
+	$(document).ready(function(){
+    		$('a').click(function(){
+    			var selected = $(this);
+    			$('a').removeClass('active');
+    			$(selected).addClass('active');
+    		});
+    		var $a = $('.a'),
+    		$b = $('.b'),
+    		$c = $('.c'),
+    		$d = $('.d'),
+        $e = $('.e'),
+    		$home = $('.home'),
+    		$introduction = $('.introduction'),
+    		$syntax = $('.syntax'),
+    		$colors = $('.colors'),
+        $backgrounds = $('.backgrounds');
+    		$a.click(function(){
+    			$home.fadeIn();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+    		});
+    		$b.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeIn();
+    			$syntax.fadeOut();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$c.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeIn();
+				  $colors.fadeOut();
+          $backgrounds.faceOut();
+            });
+    		$d.click(function() {
+          $home.fadeOut();
+    			$introduction.fadeOut();
+    			$syntax.fadeOut();
+				  $colors.fadeIn();
+          $backgrounds.faceOut();
+            });
+        $e.click(function() {
+          $home.fadeOut();
+        	$introduction.fadeOut();
+        	$syntax.fadeOut();
+    			$colors.fadeOut();
+          $backgrounds.fadeIn();
+            });
+    	});
+    </script>
 </head>
 
 <body background="images/background.jpg">
@@ -192,4 +245,27 @@
     </div>
 </div>
 </body>
+	
+<footer>
+    <div class="footer">
+        <p>OrangeTutorials&copy; 2018-19<br>
+            OrangeTutorial@slu.edu.ph<br>
+            Baguio City, Philippines<br>
+            0985496325<br>
+        </p>
+        <a href="https://mail.google.com">
+            <img src="images/gm.png" height="35" width="35" alt="gm logo"/>
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/fb.png" height="35" width="35" alt="fb logo"/>
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/ig.png" height="35" width="35" alt="ig logo"/>
+        </a>
+        <a href="https://www.pinterest.ph">
+            <img src="images/pin.png" height="35" width="35" alt="pinterest logo"/>
+        </a>
+    </div>
+</footer>
+	
 </html>
