@@ -20,11 +20,11 @@
 
 <div class="nav">
     <a class="a active" href="#">Home</a>
-    <a class="b" href="#">JS</a>
-    <a class="c" href="#">Topic: Employing Objects</a>
-    <a class="d" href="#">Creating an Object</a>
-    <a class="e" href="#">Extending an Object</a>
-    <a class="f" href="#">Creating an Array Objects</a>
+    <a class="b" href="#js">JS</a>
+    <a class="c" href="#objects">Topic: Objects</a>
+    <a class="d" href="#creating-object">Objects: Creating an Object</a>
+    <a class="e" href="#extending-object">Objects: Extending an Object</a>
+    <a class="f" href="#creating-array-object">Objects: Creating an Array Objects</a>
 </div>
 
 <div class="topic" id="js">
@@ -50,8 +50,8 @@
 
 	<br/><br/>
 
-	<h2>Objects</h2>
-	<section>
+	<section id="objects">
+		<h2>Objects</h2>
 		<p>
 			Object is an entity with properties (variables or constants) that store data and
 			methods (functions) that perform tasks.
@@ -70,7 +70,7 @@
 
 	<br/><br/>
 
-	<section>
+	<section id="creating-object">
 		<h3>Creating an Object</h3>
 		<p>
 			Object Definition Syntax:
@@ -83,6 +83,7 @@
 		<pre>  this.first-method = function1;</pre>
 		<pre>  this.second-method = function2;</pre>
 		<pre>}</pre>
+		<br/>
 		<p>
 			The Object Definition function is also called a Constructor.
 			Now we will make a JS file "Fungus.js". The object will be named Fungus.
@@ -104,28 +105,18 @@
 		<pre>}</pre>
 		<br/>
 		<p>
-			For the methods to work, we will also give them the functions
+			For the methods to work, we will also give them the functions above the Fungus constructor
 			that returns the values of cell-type and cell-number in the following:
 		</p>
 		<pre>function get-cell-type() { return cell-type; }</pre>
 		<pre>function get-cell-number() { return cell-number; }</pre>
 		<pre>function get-message() { return message; }</pre>
 		<pre>function set-message(message) { this.message = message; }</pre>
-		<p>
-			There, you created an object. How about typing whatever message the Fungi has in this text area:
-		</p>
-		<textarea>
-			Hello, I'm a cute mushroom!
-		</textarea>
-		<button>
-			Send Message From Fungus
-		</button>
-		<!--Insert Mushroom Image Here With Message Producing Script Near It-->
 	</section>
 
 	<br/><br/>
 
-	<section>
+	<section id="extending-object">
 		<h3>Extending an Object</h3>
 		<p>
 			In extending the Fungus objects, we are still going to use the "Fungus.js" file and save in it.
@@ -142,12 +133,11 @@
 			The additional properties and methods part of the program below
 			will be written below the Fungus Constructor.
 		</p>
-		<br/>
 		<pre>Fungus.prototype.button-color = "red";</pre>
 		<pre>Fungus.prototype.button-size = "big";</pre>
 		<pre>Fungus.prototype.stem-color = "yellow";</pre>
 		<pre>Fungus.prototype.stem-length = "short";</pre>
-		<pre>Fungus.prototype.has-spores = false;</pre>
+		<pre>Fungus.prototype.has-spores = true;</pre>
 		<pre>Fungus.prototype.spores-color = "white";</pre>
 		<br/>
 		<pre>Fungus.prototype.get-button-color = function() { return button-color; };</pre>
@@ -163,27 +153,41 @@
 		<pre>Fungus.prototype.set-stem-length = function(stem-length) {  this.stem-length = stem-length; };</pre>
 		<pre>Fungus.prototype.set-has-spores = function(has-spores) {  this.has-spores = has-spores; };</pre>
 		<pre>Fungus.prototype.set-button-color = function(spores-color) {  this.spores-color = spores-color; };</pre>
-		<p>
-			Now, we are going to employ the init function.
-		</p>
 		<br/>
 		<p>
 			There you go! Here is a cute mushroom with the properties above.
 		</p>
-		<!--Insert Mushroom Image Here-->
-		<button>
-
-		</button>
+		<img src="images/Mushroom_-_New_Super_Mario_Bros.png"/>
 	</section>
 
 	<br/><br/>
 
-	<section>
+	<section id="creating-array-object">
 		<h3>Creating an Array Object</h3>
 		<p>
-			Now, in creating Array Objects, we are going to change the name of the Fungus Constructor into
-			Mushroom. All of the changes done here will be saved in "Mushroom.js".
+			Arrays in JavaScript are flexible so they can be expanded as much as you want
+			even if you already set the number of their indices in their initialization.
+			The arrays can have some or all of their indices empty.
+			Now, in creating Array Objects within "Fungus.js", we will create a button-colors array
+			that is an extension of Fungus object
+			below the Fungus.prototype.set-button-color declaration and initialization:
 		</p>
+		<pre>Fungus.prototype.button-colors = [];</pre>
+		<br/>
+		<p>
+			Note that the arrays in JavaScript always by default, start with index 0.
+			We will set the value of the first index of button-colors to the value of button-color:
+		</p>
+		<pre>button-colors[0] = this.get-button-color();</pre>
+		<br/>
+		<p>
+			The value of index 1 will be "blue", the value of index 2 will be "yellow",
+			and the value of index 3 will be "green":
+		</p>
+		<pre>button-colors[1] = "blue";</pre>
+		<pre>button-colors[2] = "yellow";</pre>
+		<pre>button-colors[3] = "green";</pre>
+		<img src="images/1-Down_Mushroom_NSMBDIY.png"/>
 	</section>
 	</div>
 </body>
