@@ -34,7 +34,6 @@
                     <h2>Identification</h2>
                     </a>
                 </div>
-        
                 <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
                     <a href="multipleChoice.php" class="blog-entry">
                     <img src="images/Quiz-Games-red.png" alt="Image placeholder">
@@ -42,7 +41,6 @@
                     </a>
                 </div>
             </div>
-
             </div>
         </div>
       </section>

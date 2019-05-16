@@ -1,7 +1,6 @@
 <?php include 'db.php'; ?>
 <?php session_start() ?>
 <?php
-    //Camille Poyaoan
     // Get total questions
     $query = "SELECT COUNT(question_number) as 'total' FROM `questions` WHERE q_group =1";
     $results = $mysqli->query($query) or die($mysqli->error.___Line___);
@@ -34,14 +33,8 @@
           <li class="odd wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><strong>Number of Questions: </strong> 10</li>
           <li class="even wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="450ms"><strong>Type: </strong> Multiple Choice</li>
         </ul>
-<!--         <form method="post" action="qMultipleChoice.php?n=1">
-            <input type="submit" name="reset" value="Start Quiz" />
-          </form> -->
          <a href="qMultipleChoice.php?n=1" class="start">Start Quiz</a>
       </div>
-
-
-
     <section class="learning-button">
       <div class="caption">
         <a class="btn toggle-btn" href="index.php">Go Back</a>

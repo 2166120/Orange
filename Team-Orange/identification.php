@@ -1,7 +1,6 @@
 <?php include 'db.php'; ?>
 <?php session_start() ?>
 <?php
-    // Kaye Cariño
     // Get total questions
     $query = "SELECT COUNT(question_number) as 'total' FROM `questions` WHERE q_group =4";
     $results = $mysqli->query($query) or die($mysqli->error.___Line___);
