@@ -1,7 +1,6 @@
 <?php include 'db.php'; ?>
 <?php session_start(); ?>
 <?php
-  //Faye Lampa
   //Random questions
   $number = (int) $_GET['n'];
   $number = rand(36, 45);
@@ -50,8 +49,6 @@
             <input type="submit" name="submit" value="Submit" />
             <input type="hidden" name="number" value="<?php echo $number; ?>" />
          </div>
-
-   
       <section class="learning-button">
         <div class="caption">
           <a class="btn toggle-btn" href="index.php">Go Back</a>
