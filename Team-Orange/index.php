@@ -44,13 +44,13 @@
                 <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
                     <img src="images/Quiz-Games-red.png" alt="Image placeholder">
                     <h2>Multiple Choice</h2>
-                    <a href="identification.php" class="blog-entry">
+                    <a href="multipleChoice.php" class="blog-entry">
                      	<p>10 questions
                     </a>
-                     <a href="identification.php" class="blog-entry">
+                     <a href="multipleChoice.php" class="blog-entry">
                      	<p>30 questions
                     </a>
-                     <a href="identification.php" class="blog-entry">
+                     <a href="multipleChoice.php" class="blog-entry">
                      	<p>50 questions
                     </a>
                 </div>
