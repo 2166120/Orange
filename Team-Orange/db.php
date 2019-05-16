@@ -1,5 +1,4 @@
 <?php
-//Faye Lampa
 //Create connection credentials
 $db_host = 'localhost';
 $db_name = 'kuiz';

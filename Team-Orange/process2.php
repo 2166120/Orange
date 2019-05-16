@@ -1,7 +1,6 @@
 <?php include 'db.php'; ?>
 <?php session_start(); ?>
 <?php
-	//Arvin Dagang & Kaye Cariño
 	// Check to see if score is set_error_handler
 	if(!isset($_SESSION['score'])){
 		$_SESSION['score'] = 0;
@@ -19,7 +18,6 @@
 		$row = $results->fetch_assoc();
 		$total = $row['total'];	
 
-		// Bryn Edades & Camille Poyaoan
 		//Get correct choice
 		$query = "SELECT * FROM `choices` 
 		WHERE question_number = $number AND is_correct = 1";
@@ -35,7 +33,7 @@
 			$sess_score += 1;			
 			$_SESSION['score'] = $sess_score;			
 		}
-		//Arvin Dagang & Bryn Edades
+
 		if(!isset($_SESSION['counter'])) {
 		    $_SESSION['counter'] = 0;
 		}
@@ -45,7 +43,6 @@
     		++$_SESSION['counter'];
     	}
     
-		// Drev Assuncion & Faye Lampa
 		//Check if last question
 		if($_SESSION['counter'] == 10) {
 			 $_SESSION['counter'] = 0;
