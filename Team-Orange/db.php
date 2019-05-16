@@ -1,7 +1,7 @@
 <?php
 //Create connection credentials
 $db_host = 'localhost';
-$db_name = 'kuiz';
+$db_name = 'quiz';
 $db_user = 'root';
 $db_pass = '';
 //Create mysqli object
