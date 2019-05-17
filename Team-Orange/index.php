@@ -26,7 +26,7 @@
             	 <img src="images/orange.jpg" alt="Image placeholder">
                 <p class="lead">
                 <h1>about.</h1>
-                OrangeQuizzer is an interactive website application that helps the users to learn and at the same time have fun in learning one topic each from HyperText Transfer Protocol (HTTP), Cascading Style Sheets (CSS) and JavaScript (JS). OrangeQuizzer provides good learning materials and quizzes. It also proide examples andd trivia for the users.</p>
+                OrangeQuizzer is an interactive website application that helps the users to learn and at the same time have fun in learning one topic each from HyperText Transfer Protocol (HTTP), Cascading Style Sheets (CSS) and JavaScript (JS). OrangeQuizzer provides good learning materials and quizzes. It also proide examples and trivia for the users.</p>
 
             </div>
             </div>

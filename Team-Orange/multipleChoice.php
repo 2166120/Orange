@@ -28,7 +28,7 @@
 <body>
     <div id="intro">
       <div class="test-container">
-        <h2>Directions: Read the questions carefully and choose the letter of the correct answer.</h2>
+        <h2>Directions: Read the questions carefully and choose the correct answer.</h2>
         <ul class="list-quiz">
           <li class="odd wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><strong>Number of Questions: </strong> 10</li>
           <li class="even wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="450ms"><strong>Type: </strong> Multiple Choice</li>
