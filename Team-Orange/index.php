@@ -33,19 +33,19 @@
          
                  <h1>Choose a topic</h1>
 
-                    <a href="index2.php" class="blog-entry">
+                    <a href="http.php" class="blog-entry">
                     <img src="images/http.png" alt="Image placeholder">
                     <h2>HyperText Transfer Protocol</h2>
                     </a>
                 </div>
                 <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                    <a href="index2.php" class="blog-entry">
+                    <a href="css.php" class="blog-entry">
                     <img src="images/css.png" alt="Image placeholder">
                     <h2>Cascading Style Sheets</h2>
                     </a>
                 </div>
                  <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                    <a href="index2.php" class="blog-entry">
+                    <a href="js.php" class="blog-entry">
                     <img src="images/js.png" alt="Image placeholder">
                     <h2>JavaScript</h2>
                     </a>
