@@ -1,7 +1,6 @@
 <?php include 'db.php'; ?>
 <?php session_start(); ?>
 <?php
-  //Camille Poyaoan
   //Random questions
   $number = (int) $_GET['n'];
   $number = rand(1, 15);
