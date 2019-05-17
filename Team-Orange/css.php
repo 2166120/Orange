@@ -35,20 +35,20 @@
                 <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">         
                     <img src="images/red_question_mark_icon_vector_281131.jpg" alt="Image placeholder">
                     <h2>Identification</h2>
-                     <a href="identification.php" class="blog-entry">
+                    
                       <p>10 questions
-                    </a>
-                     <a href="identification.php" class="blog-entry">
+                  
+                     
                       <p>20 questions
-                    </a>
-                     <a href="identification.php" class="blog-entry">
+                   
+                    
                       <p>30 questions
-                    </a>
+                    
                 </div>       
                 <div class="col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
                     <img src="images/mc.png" alt="Image placeholder">
                     <h2>Multiple Choice</h2>
-                    <a href="multipleChoice.php" class="blog-entry">
+                    <a href="cssmc10.php" class="blog-entry">
                       <p>10 questions
                     </a>
                      <a href="multipleChoice.php" class="blog-entry">
@@ -63,6 +63,11 @@
         </div>
       </section>
     </div>
+     <section class="learning-button">
+      <div class="caption">
+        <a class="btn toggle-btn" href="index.php">Go Back</a>
+      </div>
+    </section>
   <footer id="footer">
     <div class="footer-bottom">
       <div class="container">

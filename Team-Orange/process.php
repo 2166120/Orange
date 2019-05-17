@@ -51,9 +51,9 @@
 				exit();
 		} else {
 			if ($_SESSION['quiz'] == 1) {
-				header("Location: qMultipleChoice.php?n=".$next);	
+				header("Location: qMultipleChoice?n=".$next);	
 			}else if($_SESSION['quiz'] == 2) {
- 				header("Location: qTrueFalse.php?n=".$next);			
+ 				header("Location: qMultipleChoice?n=".$next);			
 			}
 		}
 	}
